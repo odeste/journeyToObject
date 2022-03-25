@@ -17,6 +17,7 @@ void initBuff (int maxSize)
 {
   maxBuff = maxSize;
   tabBuff = (char *) malloc(maxBuff+1); // +1 to have enough space for the '\0' ending  character
+  clearBuff();
 }
 
 void addBuff(char c)
