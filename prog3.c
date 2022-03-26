@@ -50,7 +50,7 @@ int main() {
 
   Buffer b[2]; 
   Buffer * pFirstBuff = b;
-  Buffer * pSecondBuff = &(b[1]);
+  Buffer * pSecondBuff = &(b[1]);  //recalling &(b[0]) = b, then &(b[1]) corresponds to the pointer on the second element of the array
   
   initBuff(pFirstBuff,12);
   initBuff(pSecondBuff,32);
